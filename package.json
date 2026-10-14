@@ -1,0 +1,59 @@
+{
+  "name": "brag-cli",
+  "version": "1.0.0",
+  "description": "Brag document CLI: log your work wins from the terminal and export a Markdown brag journal for performance reviews, promotions and 1:1s",
+  "keywords": [
+    "brag",
+    "brag-document",
+    "brag-doc",
+    "brag-journal",
+    "work-log",
+    "worklog",
+    "journal",
+    "accomplishments",
+    "achievements",
+    "performance-review",
+    "self-review",
+    "promotion",
+    "career",
+    "productivity",
+    "markdown",
+    "cli",
+    "terminal",
+    "typescript"
+  ],
+  "homepage": "https://github.com/umer279/brag-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umer279/brag-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/umer279/brag-cli/issues"
+  },
+  "author": "umer279 (https://github.com/umer279)",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "brag": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "npm run typecheck && node --test \"test/**/*.test.ts\""
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.7.3",
+    "commander": "^15.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  },
+  "files": [
+    "dist"
+  ]
+}
